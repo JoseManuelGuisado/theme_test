@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains theme_test.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function theme_test_help($route_name, RouteMatchInterface $route_match) {
+	switch ($route_name) {
+	// Main module help for the theme_test module.
+		case 'help.page.theme_test':
+		$output = '';
+		$output .= '<h3>' . t('About') . '</h3>';
+		$output .= '<p>' . t('Theme test') . '</p>';
+		return $output;
+
+		default:
+	}
+}
+
+/**
+ * Implements hook_theme().
+ */
+function theme_test_theme() {
+	return array(
+		'theme_test_guia' => [
+			'variables' => [
+				'data' => '',
+			],
+			'template' => 'theme_test_guia',
+		],
+	);
+}

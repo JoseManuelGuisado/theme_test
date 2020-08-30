@@ -1,0 +1,7 @@
+theme_test.prueba:
+  path: '/theme_test/guia'
+  defaults:
+    _controller: '\Drupal\theme_test\Controller\ThemeTestController::guia'
+    _title: 'Theme Test Guia'
+  requirements:
+    _permission: 'access content'

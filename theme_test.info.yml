@@ -1,0 +1,5 @@
+name: 'Theme test'
+type: module
+description: 'Theme test'
+core: 8.x
+package: 'test'
